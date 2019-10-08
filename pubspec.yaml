@@ -1,8 +1,8 @@
 name: http_api_call
 description: Package to simplify API call.
 version: 0.0.1
-author: Ashraf Kamarudin
-homepage: 
+author: Ashraf Kamarudin <ashrafkamarudin1995@gmail.com>
+homepage: https://github.com/ashrafkamarudin/http_api_call
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
