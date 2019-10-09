@@ -2,13 +2,18 @@ library http_api_call;
 
 import 'package:http/http.dart' as http;
 import 'dart:convert';
+import 'Post.dart';
 
 class Api {
 	
-    String apiKey;
+  String url;
+  String apiKey;
 	String secretKey;
 
 	Map<String, String> headers;
+  Map<String, String> body;
+
+  Post callPost;
 
 	Api({this.apiKey, this.secretKey}) {
 		this.headers = {
@@ -18,9 +23,27 @@ class Api {
 		};
 	}
 
+  setBody(body) {
+
+    Api api = Api(apiKey: this.apiKey, secretKey: this.secretKey);
+
+    api.body = body;
+
+    return api;
+  }
+
 	get(String url) async {
 		final response =
 			await http.get(url, headers: headers);
+
+		this.statusCheck(response.statusCode);
+
+		return response;
+	}
+
+  post(String url) async {
+		final response =
+			await http.post(url, headers: headers, body: json.encode(this.body));
 
 		this.statusCheck(response.statusCode);
 
