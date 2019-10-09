@@ -6,12 +6,12 @@ void main() {
 
     await Api( // get method
       apiKey: 'Username',
-      secretKey: 'J694AAqcMADTPaVH427zpI2DwYg6zZwH32ewcTAloZQRK7l1gxG6DkNh3TGlo10C')
+      secretKey: 'Password')
     .get("https://manage.runcloud.io/api/v2/ping");
 
     await Api( // post method
-      apiKey: 'Password',
-      secretKey: 'J694AAqcMADTPaVH427zpI2DwYg6zZwH32ewcTAloZQRK7l1gxG6DkNh3TGlo10C')
+      apiKey: 'Username',
+      secretKey: 'Password')
     .setBody({
       "name" : "test api 2",
       "ipAddress" : "192.168.0.2",
