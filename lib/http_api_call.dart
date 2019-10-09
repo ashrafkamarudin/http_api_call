@@ -2,7 +2,6 @@ library http_api_call;
 
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'Post.dart';
 
 class Api {
 	
@@ -12,8 +11,6 @@ class Api {
 
 	Map<String, String> headers;
   Map<String, String> body;
-
-  Post callPost;
 
 	Api({this.apiKey, this.secretKey}) {
 		this.headers = {
