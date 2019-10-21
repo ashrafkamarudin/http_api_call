@@ -4,11 +4,28 @@ Simple Flutter Package that simplify api call.
 
 ## Getting Started
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+visit https://pub.dev/packages/http_api_call/versions/0.0.2#-installing-tab- on guide of installing the package
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+## Usage
+
+Currently this API call only support api calls with basic authentication.
+
+For Get
+
+```Api(
+    apiKey: yourusername,
+    secretKey: yourpassword
+).get('https://yourapiuri.com')
+```
+
+For Post
+
+```Api(
+    apiKey: yourusername,
+    secretKey: yourpassword
+).setBody({
+    'parameter1' : value1,
+    'parameter2' : value2,
+    'parameter3' : value3
+}).post('https://yourapiuri.com');
+```
