@@ -4,7 +4,7 @@ Simple Flutter Package that simplify api call.
 
 ## Getting Started
 
-visit https://pub.dev/packages/http_api_call/versions/0.0.2#-installing-tab- on guide of installing the package
+visit https://pub.dev/packages/http_api_call/versions/0.0.3#-installing-tab- on guide of installing the package
 
 ## Usage
 
@@ -12,7 +12,8 @@ Currently this API call only support api calls with basic authentication.
 
 For Get
 
-```Api(
+```
+Api(
     apiKey: yourusername,
     secretKey: yourpassword
 ).get('https://yourapiuri.com')
@@ -20,7 +21,8 @@ For Get
 
 For Post
 
-```Api(
+```
+Api(
     apiKey: yourusername,
     secretKey: yourpassword
 ).setBody({
