@@ -1,7 +1,7 @@
 ## [0.0.3] - TODO: Add release date.
 
-* TODO: Describe initial release.
+* Clean codes and update Readme
 
 ## [0.0.2] - Add
 
-* Post Method
+* Add Post Method
